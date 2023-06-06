@@ -34,12 +34,6 @@ export function RomainEasy() {
     choiseOne ? setChoiseTwo(card) : setChoiseOne(card)
   }
 
-  //retourner les cartes à partir de 5 secondes
-  if (choiseOne != null) {
-    setTimeout(() =>
-      resetCard(), 5000);
-  }
-
   // comparer les deux cards selectionnées
   useEffect(() => {
     if (choiseOne && choiseTwo) {
